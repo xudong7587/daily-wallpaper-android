@@ -1,0 +1,5 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/widget_root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="8dp" android:gravity="center" android:background="@drawable/widget_background" android:contentDescription="点击更换一次壁纸">
+    <ImageView android:id="@+id/widget_image" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:scaleType="centerCrop" android:src="@drawable/launcher_art" android:importantForAccessibility="no" />
+    <TextView android:id="@+id/widget_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="换壁纸" android:textColor="#FFFFFF" android:textSize="14sp" android:maxLines="1" android:paddingTop="4dp" />
+    <TextView android:id="@+id/widget_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="点击更换一次" android:textColor="#D8E7FF" android:textSize="10sp" android:maxLines="2" android:ellipsize="end" />
+</LinearLayout>

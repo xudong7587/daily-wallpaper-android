@@ -1,0 +1,10 @@
+build/
+dist/
+*.keystore
+local.properties
+.gradle/
+diagnostics/
+design/
+.idea/
+.vscode/
+*.jks

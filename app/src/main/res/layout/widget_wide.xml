@@ -1,0 +1,11 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/widget_root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3dp" android:background="@drawable/widget_photo_shape" android:clipToOutline="true">
+<ImageView android:id="@+id/widget_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/launcher_art" android:importantForAccessibility="no"/>
+<ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_photo_shade" android:importantForAccessibility="no"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:orientation="horizontal" android:gravity="center_vertical" android:padding="12dp">
+<LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+<TextView android:id="@+id/widget_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="换个风景" android:textColor="#FFFFFF" android:textSize="17sp" android:maxLines="1"/>
+<TextView android:id="@+id/widget_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="轻点，换一张壁纸" android:textColor="#DEFFFFFF" android:textSize="11sp" android:maxLines="1" android:ellipsize="end"/>
+</LinearLayout><FrameLayout android:id="@+id/widget_button" android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/widget_icon_tile">
+<ImageView android:id="@+id/widget_refresh" android:layout_width="30dp" android:layout_height="30dp" android:layout_gravity="center" android:src="@drawable/widget_refresh_blue" android:importantForAccessibility="no"/>
+<ProgressBar android:id="@+id/widget_spinner" android:layout_width="30dp" android:layout_height="30dp" android:layout_gravity="center" android:visibility="gone" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/widget_spinner" android:indeterminateDuration="900" android:interpolator="@android:anim/linear_interpolator" android:importantForAccessibility="no"/>
+</FrameLayout></LinearLayout></FrameLayout>
